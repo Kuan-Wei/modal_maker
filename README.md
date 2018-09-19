@@ -13,3 +13,6 @@ This plugin is based on Bootstrap modal component and JQuery.
 
 ## Advanced usage
 Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/components/modal/) for more advanced usage.
+
+## License
+Released under the [MIT license](https://opensource.org/licenses/MIT).
