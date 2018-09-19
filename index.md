@@ -3,6 +3,7 @@
 # Description
 
 A simple plugin to create a bootstrap modal easier.
+
 This plugin is based on Bootstrap modal component and JQuery.
 <button type="button" class="btn btn-primary" id="demo0">Click me</button>
 
@@ -47,7 +48,8 @@ Customize modal body.
 // customize #demo3 modal body
 $('#demo3').modal_maker({
     modal_body : 'customize modal body'
-})// or 
+})
+// or 
 $('#demo3_1').modal_maker()
 $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
 ```
@@ -57,14 +59,23 @@ Customize modal footer.
 
 <button type="button" class="btn btn-primary" id="demo4">Demo 4</button>
  <button type="button" class="btn btn-primary" id="demo4_1">Demo 4_1</button>
+ <button type="button" class="btn btn-primary" id="demo4_2">Demo 4_2</button>
 
 ```js
 // customize #demo4 modal footer
 $('#demo4').modal_maker({
-    modal_footer : '<button type="button">footer button</button>'
-})// or 
+    modal_footer : '<button type="button" class="btn btn-primary">footer button</button>'
+})
+// or 
 $('#demo4_1').modal_maker()
-$('#demo4_1').modal_maker('set_modal_footer','<button type="button">footer button</button>')
+$('#demo4_1').modal_maker('set_modal_footer','<button type="button" class="btn btn-primary">footer button</button>')
+// or 
+var modal_footer_btn = $('<button type="button" class="btn btn-primary">footer button</button>')
+    .on('click', function(){
+        $('#demo4_2').modal_maker('modal_hide')
+    })
+$('#demo4_2').modal_maker()
+$('#demo4_2').modal_maker('set_modal_footer', modal_footer_btn)
 ```
 
 ## Advanced Usage

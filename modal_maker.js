@@ -34,7 +34,7 @@ if ( typeof Object.create !== 'function' ) {
       if( _obj.options.modal_id == 'modal_maker'){        
         var date = new Date();
         var timestamp = date.getTime();
-        o_obj.options.modal_id =  'modal_maker_' + timestamp 
+        _obj.options.modal_id =  'modal_maker_' + timestamp 
       }
 
       _obj.$element
