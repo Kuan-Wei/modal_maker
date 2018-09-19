@@ -30,7 +30,7 @@ Bootstrap modal title default HTML tag is _H5_
 ```js
 // customize #demo2 modal title
 $('#demo2').modal_maker({
-    modal_title : 'demo2 title'
+    modal_title : 'customize demo 2 title'
 })
 // or 
 $('#demo2_1').modal_maker()
@@ -114,7 +114,7 @@ Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/compon
         $('#demo1').modal_maker()
 
         $('#demo2').modal_maker({
-            modal_title : 'customize modal title'
+            modal_title : 'customize demo 2 title'
         })       
         $('#demo2_1').modal_maker(); 
         $('#demo2_1').modal_maker('set_modal_title','demo2 title')
@@ -150,7 +150,7 @@ Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/compon
             })
         $('#demo5').modal_maker({
             modal_body : modal_5_body,
-            modal_footer : modal_5_footer_btn,
+            modal_footer : '+' + modal_5_footer_btn,
             hidden_bs_modal : function( event, modal ){   
                 modal.find('input').val('')
             }
