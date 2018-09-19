@@ -15,16 +15,17 @@ Simeple usage.<button type="button" id="demo1">click me</button>
 ```js
     // set #demo1 button
     $('#demo1').modal_maker()
-}
 ```
 ### demo 2
-Customize modal title.<button type="button" id="demo2">click me</button>
+Customize modal title.<button type="button" class="btn btn-primary" id="demo2">click me</button>
 ```js
+<button type="button" class="btn btn-primary" id="demo2">click me</button>
+<script>
     // customize #demo2 modal title
     $('#demo2').modal_maker({
         modal_title : 'customize modal title'
     })
-}
+</script>
 ```
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
