@@ -1,1 +1,4 @@
 theme: jekyll-theme-slate
+title: modal maker
+description: A simple plugin to create a bootstrap modal easier.
+show_downloads: true
