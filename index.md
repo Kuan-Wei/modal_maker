@@ -1,33 +1,31 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 # Description
 
 A simple plugin to create a bootstrap modal easier.
-<button type="button" id="demo0">click me</button>
-```js
-    // set #demo0 button
-    $('#demo0').modal_maker()
-```
+<button type="button" class="btn btn-primary" id="demo0">click me</button>
+
 ## Requirements
 *   [JQuery](https://jquery.com/)
 *   [Bootstrap](http://getbootstrap.com/) v4.1.0+
 
 ### demo 1
-Simeple usage.<button type="button" id="demo1">click me</button>
+Simeple usage.<button type="button" class="btn btn-primary" id="demo1">click me</button>
 ```js
     // set #demo1 button
     $('#demo1').modal_maker()
 ```
 ### demo 2
-Customize modal title.<button type="button" class="btn btn-primary" id="demo2">click me</button>
-```js
+Customize modal title. <button type="button" class="btn btn-primary" id="demo2">Click me</button>
+```
 <button type="button" class="btn btn-primary" id="demo2">click me</button>
-<script>
+```
+```js
     // customize #demo2 modal title
     $('#demo2').modal_maker({
         modal_title : 'customize modal title'
     })
-</script>
 ```
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
