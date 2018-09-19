@@ -70,7 +70,7 @@ $('#demo4').modal_maker({
 $('#demo4_1').modal_maker()
 $('#demo4_1').modal_maker('set_modal_footer','<button type="button" class="btn btn-primary">footer button</button>')
 // or 
-var modal_footer_btn = $('<button type="button" class="btn btn-primary">footer button</button>')
+var modal_4_footer_btn = $('<button type="button" class="btn btn-primary">footer button</button>')
     .on('click', function(){
         $('#demo4_2').modal_maker('modal_hide')
     })
@@ -78,7 +78,27 @@ $('#demo4_2').modal_maker()
 $('#demo4_2').modal_maker('set_modal_footer', modal_footer_btn)
 ```
 
-## Advanced Usage
+
+## Basic usage
+<button type="button" class="btn btn-primary" id="demo5">Click me</button>
+
+```js
+// customize #demo5 
+var modal_5_body = $('<input type="text" class="form-control">')
+var modal_5_footer_btn =  $('<button type="button" class="btn btn-primary">footer button</button>')
+    .on('click', function(){
+        $('#demo5').modal_maker('modal_hide')
+    })
+$('#demo5').modal_maker({
+    modal_body : modal_5_body,
+    modal_footer : modal_5_footer_btn,
+    hidden_bs_modal : function( event, modal ){   
+        modal.find('input').val('')
+    }
+})
+```
+
+## Advanced usage
 Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/components/modal/) for more advanced usage.
 
 <!-- Optional JavaScript -->
@@ -109,30 +129,33 @@ Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/compon
 
         // customize #demo4 modal footer
         $('#demo4').modal_maker({
-            modal_footer : '<button type="button">footer button</button>'
-        })// or 
+            modal_footer : '<button type="button" class="btn btn-primary">footer button</button>'
+        })
+        // or 
         $('#demo4_1').modal_maker()
-        $('#demo4_1').modal_maker('set_modal_footer','<button type="button">footer button</button>')
-
-        /*
-        var ttt = $('<button type="button" class="btn btn-primary">xxx</button>')
+        $('#demo4_1').modal_maker('set_modal_footer','<button type="button" class="btn btn-primary">footer button</button>')
+        // or 
+        var modal_4_footer_btn = $('<button type="button" class="btn btn-primary">footer button</button>')
             .on('click', function(){
-                $('#test').modal_maker('modal_hide')
+                $('#demo4_2').modal_maker('modal_hide')
             })
-        
-        var ttt2 = $('<input type="text">')
+        $('#demo4_2').modal_maker()
+        $('#demo4_2').modal_maker('set_modal_footer', modal_footer_btn)
 
-        var taa = $('#test').modal_maker({
-            modal_body : ttt2,
-            modal_footer : ttt,
+        
+        // customize #demo5 
+        var modal_5_body = $('<input type="text" class="form-control">')
+        var modal_5_footer_btn =  $('<button type="button" class="btn btn-primary">footer button</button>')
+            .on('click', function(){
+                $('#demo5').modal_maker('modal_hide')
+            })
+        $('#demo5').modal_maker({
+            modal_body : modal_5_body,
+            modal_footer : modal_5_footer_btn,
             hidden_bs_modal : function( event, modal ){   
                 modal.find('input').val('')
             }
-        });            
-
-        $('#test2').modal_maker()
-        $('#test2').modal_maker('set_modal_body','<h1>tttt</h1>')   
-        */
+        })
     })
 
 </script>

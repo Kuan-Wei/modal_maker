@@ -142,12 +142,14 @@ if ( typeof Object.create !== 'function' ) {
   };
   
   $.fn.modal_maker.options = {
-    modal_id : 'modal_maker',
-    modal_size : '',
-    modal_label : 'modalLabel',
-    modal_title : 'modalTitle',
-    modal_body : 'modal body',
-    modal_footer : '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>',
+    modal_id             : 'modal_maker',
+    modal_size            : '',
+    modal_label           : 'modalLabel',
+    modal_title           : 'modalTitle',
+    modal_body            : 'modal body',
+    modal_body_class      : '',
+    modal_footer          : '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>',
+    modal_footer_class    : '',
     modal_dialog_centered : false,
   
     show_bs_modal : function( event, modal ){      
