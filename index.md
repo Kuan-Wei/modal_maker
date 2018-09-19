@@ -12,7 +12,7 @@ This plugin is based on Bootstrap modal component and JQuery.
 
 ## Demos
 ### demo 1
-Simeple usage. <button type="button" class="btn btn-primary" id="demo1">Click me</button>
+Simeple usage. <button type="button" class="btn btn-primary" id="demo1">Demo 1</button>
 ```js
 // set #demo1 button
 $('#demo1').modal_maker()
@@ -24,7 +24,8 @@ Customize modal title.
 Bootstrap modal title default HTML tag is _H5_
 
 
-<button type="button" class="btn btn-primary" id="demo2">Click me</button> <button type="button" class="btn btn-primary" id="demo2_1">Click me</button>
+<button type="button" class="btn btn-primary" id="demo2">Demo 2</button> 
+<button type="button" class="btn btn-primary" id="demo2_1">Demo 2_1</button>
 
 ```js
 // customize #demo2 modal title
@@ -39,8 +40,8 @@ $('#demo2_1').modal_maker('set_modal_title','demo2 title')
 ### demo 3
 Customize modal body. 
 
-<button type="button" class="btn btn-primary" id="demo3">Click me</button>
- <button type="button" class="btn btn-primary" id="demo3_1">Click me</button>
+<button type="button" class="btn btn-primary" id="demo3">Demo 3</button>
+ <button type="button" class="btn btn-primary" id="demo3_1">Demo 3_1</button>
 
 ```js
 // customize #demo3 modal body
@@ -54,8 +55,8 @@ $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
 ### demo 4
 Customize modal footer. 
 
-<button type="button" class="btn btn-primary" id="demo4">Click me</button>
- <button type="button" class="btn btn-primary" id="demo4_1">Click me</button>
+<button type="button" class="btn btn-primary" id="demo4">Demo 4</button>
+ <button type="button" class="btn btn-primary" id="demo4_1">Demo 4_1</button>
 
 ```js
 // customize #demo4 modal footer
