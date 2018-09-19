@@ -3,7 +3,7 @@
 # Description
 
 A simple plugin to create a bootstrap modal easier.
-<button type="button" class="btn btn-primary" id="demo0">click me</button>
+<button type="button" class="btn btn-primary" id="demo0">Click me</button>
 
 ## Requirements
 *   [JQuery](https://jquery.com/)
@@ -18,7 +18,7 @@ Simeple usage. <button type="button" class="btn btn-primary" id="demo1">Click me
 ```
 
 ### demo 2
-Customize modal title. <button type="button" class="btn btn-primary" id="demo2">Click me</button><button type="button" class="btn btn-primary" id="demo2_1">Click me</button>
+Customize modal title. <button type="button" class="btn btn-primary" id="demo2">Click me</button>＆nbsp;＆nbsp;<button type="button" class="btn btn-primary" id="demo2_1">Click me</button>
 
 ```js
     // customize #demo2 modal title
@@ -26,17 +26,21 @@ Customize modal title. <button type="button" class="btn btn-primary" id="demo2">
         modal_title : 'demo2 title'
     })
     // or 
+    $('#demo2_1').modal_maker()
     $('#demo2_1').modal_maker('set_modal_title','demo2 title')
 ```
 
 ### demo 3
 Customize modal body. <button type="button" class="btn btn-primary" id="demo3">Click me</button>
+＆nbsp;＆nbsp;<button type="button" class="btn btn-primary" id="demo3_1">Click me</button>
 
 ```js
     // customize #demo3 modal body
     $('#demo3').modal_maker({
         modal_body : 'customize modal body'
-    })
+    })// or 
+    $('#demo3_1').modal_maker()
+    $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
 ```
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -52,7 +56,8 @@ Customize modal body. <button type="button" class="btn btn-primary" id="demo3">C
         $('#demo1').modal_maker()
         $('#demo2').modal_maker({
             modal_title : 'customize modal title'
-        })        
+        })       
+        $('#demo2_1').modal_maker(); 
         $('#demo2_1').modal_maker('set_modal_title','demo2 title')
         /*
         var ttt = $('<button type="button" class="btn btn-primary">xxx</button>')
