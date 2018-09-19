@@ -10,9 +10,6 @@ This plugin is based on Bootstrap modal component and JQuery.
 *   [JQuery](https://jquery.com/)
 *   [Bootstrap](http://getbootstrap.com/) v4.1.0+
 
-## Advanced Usage
-Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/components/modal/) for more advanced usage.
-
 ## Demos
 ### demo 1
 Simeple usage. <button type="button" class="btn btn-primary" id="demo1">Click me</button>
@@ -22,7 +19,12 @@ $('#demo1').modal_maker()
 ```
 
 ### demo 2
-Customize modal title. <button type="button" class="btn btn-primary" id="demo2">Click me</button> <button type="button" class="btn btn-primary" id="demo2_1">Click me</button>
+Customize modal title. 
+
+Bootstrap modal title default HTML tag is _H5_
+
+
+<button type="button" class="btn btn-primary" id="demo2">Click me</button> <button type="button" class="btn btn-primary" id="demo2_1">Click me</button>
 
 ```js
 // customize #demo2 modal title
@@ -35,7 +37,9 @@ $('#demo2_1').modal_maker('set_modal_title','demo2 title')
 ```
 
 ### demo 3
-Customize modal body. <button type="button" class="btn btn-primary" id="demo3">Click me</button>
+Customize modal body. 
+
+<button type="button" class="btn btn-primary" id="demo3">Click me</button>
  <button type="button" class="btn btn-primary" id="demo3_1">Click me</button>
 
 ```js
@@ -48,7 +52,9 @@ $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
 ```
 
 ### demo 4
-Customize modal footer. <button type="button" class="btn btn-primary" id="demo4">Click me</button>
+Customize modal footer. 
+
+<button type="button" class="btn btn-primary" id="demo4">Click me</button>
  <button type="button" class="btn btn-primary" id="demo4_1">Click me</button>
 
 ```js
@@ -59,6 +65,10 @@ $('#demo4').modal_maker({
 $('#demo4_1').modal_maker()
 $('#demo4_1').modal_maker('set_modal_footer','<button type="button">footer button</button>')
 ```
+
+## Advanced Usage
+Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/components/modal/) for more advanced usage.
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -91,7 +101,7 @@ $('#demo4_1').modal_maker('set_modal_footer','<button type="button">footer butto
         })// or 
         $('#demo4_1').modal_maker()
         $('#demo4_1').modal_maker('set_modal_footer','<button type="button">footer button</button>')
-        
+
         /*
         var ttt = $('<button type="button" class="btn btn-primary">xxx</button>')
             .on('click', function(){
