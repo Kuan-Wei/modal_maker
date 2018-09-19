@@ -9,24 +9,35 @@ A simple plugin to create a bootstrap modal easier.
 *   [JQuery](https://jquery.com/)
 *   [Bootstrap](http://getbootstrap.com/) v4.1.0+
 
+## Desmos
 ### demo 1
-Simeple usage.<button type="button" class="btn btn-primary" id="demo1">click me</button>
+Simeple usage. <button type="button" class="btn btn-primary" id="demo1">Click me</button>
 ```js
     // set #demo1 button
     $('#demo1').modal_maker()
 ```
+
 ### demo 2
-Customize modal title. <button type="button" class="btn btn-primary" id="demo2">Click me</button>
-```
-<button type="button" class="btn btn-primary" id="demo2">click me</button>
-```
+Customize modal title. <button type="button" class="btn btn-primary" id="demo2">Click me</button><button type="button" class="btn btn-primary" id="demo2-1">Click me</button>
+
 ```js
     // customize #demo2 modal title
     $('#demo2').modal_maker({
-        modal_title : 'customize modal title'
+        modal_title : 'demo2 title'
     })
+    // or 
+    $('#demo2').modal_maker('set_modal_title','demo2 title')
 ```
 
+### demo 3
+Customize modal body. <button type="button" class="btn btn-primary" id="demo3">Click me</button>
+
+```js
+    // customize #demo3 modal body
+    $('#demo3').modal_maker({
+        modal_body : 'customize modal body'
+    })
+```
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -41,7 +52,9 @@ Customize modal title. <button type="button" class="btn btn-primary" id="demo2">
         $('#demo1').modal_maker()
         $('#demo2').modal_maker({
             modal_title : 'customize modal title'
-        })
+        })        
+        $('#demo2-1').modal_maker('set_modal_title','demo2 title')
+        
         var ttt = $('<button type="button" class="btn btn-primary">xxx</button>')
             .on('click', function(){
                 $('#test').modal_maker('modal_hide')

@@ -93,11 +93,16 @@ if ( typeof Object.create !== 'function' ) {
       var _obj = this;
     },
 
+    set_modal_title : function( content ){
+      var _obj = this;  
+      $( _obj.modal_header ).find('h5').html( content?  content : _obj.options.modal_title );
+    },
+  
     set_modal_body : function( content ){
       var _obj = this;  
       $( _obj.modal_body ).html( content?  content : _obj.options.modal_body );
     },
-  
+
     set_modal_footer : function( content ){
       var _obj = this;  
       $( _obj.modal_footer ).append( content?  content :  _obj.options.modal_footer );
@@ -136,7 +141,7 @@ if ( typeof Object.create !== 'function' ) {
     modal_label : 'modalLabel',
     modal_title : 'modalTitle',
     modal_body : 'modal body',
-    modal_body : '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>',
+    modal_footer : '<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>',
     modal_dialog_centered : false,
   
     show_bs_modal : function( event, modal ){      
