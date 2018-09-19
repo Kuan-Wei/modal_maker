@@ -13,34 +13,34 @@ A simple plugin to create a bootstrap modal easier.
 ### demo 1
 Simeple usage. <button type="button" class="btn btn-primary" id="demo1">Click me</button>
 ```js
-    // set #demo1 button
-    $('#demo1').modal_maker()
+// set #demo1 button
+$('#demo1').modal_maker()
 ```
 
 ### demo 2
-Customize modal title. <button type="button" class="btn btn-primary" id="demo2">Click me</button>＆nbsp;＆nbsp;<button type="button" class="btn btn-primary" id="demo2_1">Click me</button>
+Customize modal title. <button type="button" class="btn btn-primary" id="demo2">Click me</button> <button type="button" class="btn btn-primary" id="demo2_1">Click me</button>
 
 ```js
-    // customize #demo2 modal title
-    $('#demo2').modal_maker({
-        modal_title : 'demo2 title'
-    })
-    // or 
-    $('#demo2_1').modal_maker()
-    $('#demo2_1').modal_maker('set_modal_title','demo2 title')
+// customize #demo2 modal title
+$('#demo2').modal_maker({
+    modal_title : 'demo2 title'
+})
+// or 
+$('#demo2_1').modal_maker()
+$('#demo2_1').modal_maker('set_modal_title','demo2 title')
 ```
 
 ### demo 3
 Customize modal body. <button type="button" class="btn btn-primary" id="demo3">Click me</button>
-＆nbsp;＆nbsp;<button type="button" class="btn btn-primary" id="demo3_1">Click me</button>
+ <button type="button" class="btn btn-primary" id="demo3_1">Click me</button>
 
 ```js
-    // customize #demo3 modal body
-    $('#demo3').modal_maker({
-        modal_body : 'customize modal body'
-    })// or 
-    $('#demo3_1').modal_maker()
-    $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
+// customize #demo3 modal body
+$('#demo3').modal_maker({
+    modal_body : 'customize modal body'
+})// or 
+$('#demo3_1').modal_maker()
+$('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
 ```
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -54,11 +54,20 @@ Customize modal body. <button type="button" class="btn btn-primary" id="demo3">C
         /// set #demo0 button
         $('#demo0').modal_maker()
         $('#demo1').modal_maker()
+
         $('#demo2').modal_maker({
             modal_title : 'customize modal title'
         })       
         $('#demo2_1').modal_maker(); 
         $('#demo2_1').modal_maker('set_modal_title','demo2 title')
+
+        // customize #demo3 modal body
+        $('#demo3').modal_maker({
+            modal_body : 'customize modal body'
+        })// or 
+        $('#demo3_1').modal_maker()
+        $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
+
         /*
         var ttt = $('<button type="button" class="btn btn-primary">xxx</button>')
             .on('click', function(){
