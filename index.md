@@ -3,13 +3,17 @@
 # Description
 
 A simple plugin to create a bootstrap modal easier.
+This plugin is based on Bootstrap modal component and JQuery.
 <button type="button" class="btn btn-primary" id="demo0">Click me</button>
 
 ## Requirements
 *   [JQuery](https://jquery.com/)
 *   [Bootstrap](http://getbootstrap.com/) v4.1.0+
 
-## Desmos
+## Advanced Usage
+Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/components/modal/) for more advanced usage.
+
+## Demos
 ### demo 1
 Simeple usage. <button type="button" class="btn btn-primary" id="demo1">Click me</button>
 ```js
@@ -42,6 +46,19 @@ $('#demo3').modal_maker({
 $('#demo3_1').modal_maker()
 $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
 ```
+
+### demo 4
+Customize modal footer. <button type="button" class="btn btn-primary" id="demo4">Click me</button>
+ <button type="button" class="btn btn-primary" id="demo4_1">Click me</button>
+
+```js
+// customize #demo4 modal footer
+$('#demo4').modal_maker({
+    modal_footer : '<button type="button">footer button</button>'
+})// or 
+$('#demo4_1').modal_maker()
+$('#demo4_1').modal_maker('set_modal_footer','<button type="button">footer button</button>')
+```
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -68,6 +85,13 @@ $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
         $('#demo3_1').modal_maker()
         $('#demo3_1').modal_maker('set_modal_body','<h1>this is modal body</h1>')
 
+        // customize #demo4 modal footer
+        $('#demo4').modal_maker({
+            modal_footer : '<button type="button">footer button</button>'
+        })// or 
+        $('#demo4_1').modal_maker()
+        $('#demo4_1').modal_maker('set_modal_footer','<button type="button">footer button</button>')
+        
         /*
         var ttt = $('<button type="button" class="btn btn-primary">xxx</button>')
             .on('click', function(){
