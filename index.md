@@ -150,7 +150,7 @@ Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/compon
             })
         $('#demo5').modal_maker({
             modal_body : modal_5_body,
-            modal_footer : '+' + modal_5_footer_btn,
+            modal_footer : modal_5_footer_btn,
             hidden_bs_modal : function( event, modal ){   
                 modal.find('input').val('')
             }
