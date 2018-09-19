@@ -1,11 +1,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-# Description
+# Description <button type="button" class="btn btn-primary" id="demo0">Click me</button>
 
 A simple plugin to create a bootstrap modal easier.
 
 This plugin is based on Bootstrap modal component and JQuery.
-<button type="button" class="btn btn-primary" id="demo0">Click me</button>
 
 ## Requirements
 *   [JQuery](https://jquery.com/)
@@ -75,7 +74,7 @@ var modal_4_footer_btn = $('<button type="button" class="btn btn-primary">footer
         $('#demo4_2').modal_maker('modal_hide')
     })
 $('#demo4_2').modal_maker()
-$('#demo4_2').modal_maker('set_modal_footer', modal_footer_btn)
+$('#demo4_2').modal_maker('set_modal_footer', modal_4_footer_btn)
 ```
 
 
@@ -140,7 +139,7 @@ Please read [Bootstrap modal component](https://getbootstrap.com/docs/4.1/compon
                 $('#demo4_2').modal_maker('modal_hide')
             })
         $('#demo4_2').modal_maker()
-        $('#demo4_2').modal_maker('set_modal_footer', modal_footer_btn)
+        $('#demo4_2').modal_maker('set_modal_footer', modal_4_footer_btn)
 
         
         // customize #demo5 
